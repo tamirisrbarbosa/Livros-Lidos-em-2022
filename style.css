@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.container{
+    background-color: #000;
+}
+.titulo-principal{
+    max-width: 480px;
+    text-align: center;
+    margin: 60px auto;
+    font-family:'bebas neue', Courier, monospace;
+    font-size: 100px;
+    color: #CD5C5C;
+}
+.titulo-principal:after{
+ content: '|';
+ margin-left: 0px;
+ opacity: 1;
+ animation: pisca .7s infinite;
+}
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+@keyframes pisca{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+body {
+  color:white;
+  background: linear-gradient(#FFE4C4, #CD5C5C);
+  font-family: 'bebas Neue', cursive, Arial, sans-serif;
+}
+
+.num{
+  float: left;
+  width: 400px;
+  position: relative;
+}
+
+.num1{
+  float: right;
+  width: 400px;
+  position: relative;
+}
+ul {
+  display: flex;
+  font-size: 50px;
+  text-align: center;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 16px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
